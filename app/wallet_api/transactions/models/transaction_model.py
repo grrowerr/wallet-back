@@ -33,7 +33,6 @@ class TransactionModel(db.Model):
     type = db.Column(
         db.Enum(TransactionTypeEnum),
         nullable=False,
-        default=TransactionTypeEnum.TRANSFER,
         comment='Enum(TransactionTypeEnum) - (Тип Транзакции)'
     )
     status = db.Column(
